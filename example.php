@@ -6,7 +6,7 @@
  *Time: 00:24
  ***/
 
-require_once 'TelegramBot.php';
+require_once 'TBot.php';
 /***
  * getData -> Ushbu funksiyani ishi telegramdan kelgan malumotni siz beradi
  * setToken ->Telegram botingiz tokeni
@@ -14,7 +14,7 @@ require_once 'TelegramBot.php';
  * sendMessage -> Xabar yuborish uchun funksiya ichiga bitta parametr oladi
  * sendPhoto -> Rasim yuborish uchun funksiya ichiga 2 ta parametr oladi
  ***/
-$telegram = new TelegramBot();
+$telegram = new TBot();
 //Bu yerga tokeningizni yozasiz qavis ichiga va ' ' orasida
 $telegram->setToken('1005050672:AAEqUpmICtQGr7CI5NeK1CNYc74SH0-U17k');
 //bu yerga veb saytingiz manzilini yozasiz qavs ichiga va '' orasida
