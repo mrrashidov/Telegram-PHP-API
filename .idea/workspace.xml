@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55cbccd-0dcd-45ec-896b-d5ce34a0a0c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579122378241</updated>
-      <workItem from="1579122379565" duration="784000" />
+      <workItem from="1579122379565" duration="1082000" />
     </task>
     <task id="LOCAL-00001" summary="B birinchi Commit">
       <created>1579122751899</created>
@@ -90,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579123011029</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="keraksiz filelar olib tashlandi">
+      <created>1579123181748</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579123181748</updated>
+    </task>
+    <task id="LOCAL-00005" summary="keraksiz filelar olib tashlandi">
+      <created>1579123334566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579123334566</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,14 +123,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="B birinchi Commit" />
     <MESSAGE value="example.php dagi xatolik togirlandi" />
-    <option name="LAST_COMMIT_MESSAGE" value="example.php dagi xatolik togirlandi" />
+    <MESSAGE value="keraksiz filelar olib tashlandi" />
+    <option name="LAST_COMMIT_MESSAGE" value="keraksiz filelar olib tashlandi" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1579123180981">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1579123333821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579123180981" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579123333821" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1579122848220">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
