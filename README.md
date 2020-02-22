@@ -5,7 +5,7 @@
 
 
 Telegram-API-PHP bu telegram messenjerida oson bot uchish uchun yozilgan open source code.
-Bu orqali siz istalgancha ozingizga telegram botlari ochishingiz mumkin va juda oson.
+Bu orqali siz istalgancha o'zingizga telegram botlari ochishingiz mumkin va juda oson.
 
 # Yuklab olish
 ---------
@@ -17,13 +17,13 @@ https://github.com/shoxruxrashidov/Telegram-API-PHP.git
 ```
 #### Github orqali 2
 ```
-Download tugmachasiga bosing va yukalb oling
+Download tugmachasiga bosing va yuklab oling
 ```
 ************
 # Pluginni ornatish
 ************
 
-TelegramBot.php-ni serveringizga nusxalash va uni yangi bot skriptingizga qo'shish kerak boladi:
+TelegramBot.php-ni serveringizga nusxalash va uni yangi bot skriptingizga qo'shish kerak bo'ladi:
 ```php
 include 'Telegram.php';
 
