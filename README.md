@@ -4,7 +4,7 @@
 ![CURL](https://img.shields.io/badge/cURL-required-green.svg)
 
 
-Telegram-API-PHP bu telegram messenjerida oson bot uchish uchun yozilgan open surce code.
+Telegram-API-PHP bu telegram messenjerida oson bot uchish uchun yozilgan open source code.
 Bu orqali siz istalgancha ozingizga telegram botlari ochishingiz mumkin va juda oson.
 
 # Yuklab olish
