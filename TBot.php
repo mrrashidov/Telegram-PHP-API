@@ -1,7 +1,7 @@
 <?php
 /***
- *Created by: u2b3ki
- *Mail: u2b3ki@gmail.com
+ *Created by: Shoxrux Rashidov
+ *Mail: shoxrux@rashidov.dev
  *Date: 2020-01-13
  *Time: 23:23
  ***/
@@ -70,16 +70,58 @@ class TBot
 
     /**
      * @param $message
+     * @param null $keyboard
      * @return bool|string
      */
-    public function sendMessage($message)
+    public function sendMessage($message, $keyboard = NULL)
     {
-        return $this->request('sendMessage', [
-            'chat_id' => $this->chatId,
-            'text' => $message
-        ]);
+        
+        if(isset($keyboard)){
+            $params = [
+                'chat_id' => $this->chatId,
+                'text' => $message,
+                'reply_markup' => $keyboard,
+            ]; 
+        }else{
+            $params = [
+                'chat_id' => $this->chatId,
+                'text' => $message
+            ];
+        }
+        
+        
+        return $this->request('sendMessage', $params);
     }
 
+    /**
+     * @param array $options
+     * @param bool $onetime
+     * @param bool $resize
+     * @param bool $selective
+     * @return bool|string
+     */
+    public function buildKeyBoard(array $options, $onetime = false, $resize = false, $selective = true)
+    {
+        $replyMarkup = [
+            'keyboard' => $options,
+            'one_time_keyboard' => $onetime,
+            'resize_keyboard' => $resize,
+            'selective' => $selective,
+        ];
+        return json_encode($replyMarkup, true);
+    }
+
+    /**
+     * @param array $options
+     * @return false|string
+     */
+    public function buildInlineKeyBoard(array $options)
+    {
+        $replyMarkup = [
+            'inline_keyboard' => $options,
+        ];
+        return json_encode($replyMarkup, true);
+    }
     /**
      * @param $url
      * @param string $caption
