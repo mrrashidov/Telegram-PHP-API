@@ -1,7 +1,7 @@
 <?php
 /***
- *Created by: u2b3ki
- *Mail: u2b3ki@gmail.com
+ *Created by: Shoxrux Rashidov
+ *Mail: shoxrux@rashidov.dev
  *Date: 2020-01-13
  *Time: 00:24
  ***/
@@ -18,7 +18,7 @@ $telegram = new TBot();
 //Bu yerga tokeningizni yozasiz qavis ichiga va ' ' orasida
 $telegram->setToken('1005050672:AAEqUpmICtQGr7CI5NeK1CNYc74SH0-U17k');
 //bu yerga veb saytingiz manzilini yozasiz qavs ichiga va '' orasida
-//echo $telegram->setWebhook('https://kurumsaldata.net/telegram/bot/bot.php');
+//echo $telegram->setWebhook('https://rashidov.dev/telegram/bot/bot.php');
 //1005050672:AAEJ5CesCWvd1c4FYQUzEw4F4VjjyubeYXw  eski token
 
 $data = $telegram->getData();
@@ -45,6 +45,19 @@ if ($data->text == 'salom') {
     $telegram->sendPhoto('https://www.fotor.com/ru/loopBannerImg/ru-homeloop2.jpg', 'senga rasim kerakmi ol ana bolmasa');
 } elseif ($data->text == 'rasim yuboring' || $data->text == 'rasim jonating') {
     $telegram->sendPhoto('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg', 'Madaniyat bilan soraganingiz uchun raxmat :)');
-} else {
+} else if($data->text == 'menu' || $data->text == 'default-menu'){
+    $menu = $this->bot->buildKeyBoard([['🏠 Bosh Saxifa']], $onetime = false, true);
+    $telegram->sendMessage('Test Menu',$menu);
+}
+else if($data->text == 'inline' || $data->text == 'inline-menu'){
+    $menu = $this->bot->buildInlineKeyBoard([
+        [
+            ['text' => 'Telegram-PHP-API Github', 'url' => 'https://github.com/shoxruxrashidov/Telegram-PHP-API'], 
+            ['text' => '🏠 Bosh Saxifa', 'callback_data' => 'home']
+        ]
+    ]);
+    $telegram->sendMessage('Inline menu ',$menu);
+}
+else {
     $telegram->sendMessage('Kechirasiz meni soz boyligim chegaralangan va men boshqa soz bilmayman:( menga faqat "salom", "qalesan yoki qalesiz", "rasim yubor yoki rasim yuboring" desangiz javob berishim mumkin');
 }
