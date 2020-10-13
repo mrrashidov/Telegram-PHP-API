@@ -64,3 +64,13 @@ Fotosurat yuborish
         $telegram->sendPhoto('https://www.fotor.com/ru/loopBannerImg/ru-homeloop2.jpg','senga rasim kerakmi ol ana bolmasa');
     }
 ```
+
+*******
+Menyu bilan xabar yuborish
+*******
+```php 
+ if ($data->text == 'menu' || $data->text == 'default-menu'){
+        $menu = $this->bot->buildKeyBoard([['🏠 Bosh Saxifa']], $onetime = false, true);
+        $telegram->sendMessage('Test Menu',$menu);
+    }
+```
